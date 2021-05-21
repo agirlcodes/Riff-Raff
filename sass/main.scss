@@ -1,0 +1,35 @@
+body{
+    background-color: pink;
+}
+img{
+    position: absolute;
+    z-index: 999;
+    height: 100px;
+    width: 60px;
+}
+header{
+    position: relative;
+    margin-left: 40%;
+    top: 40em;
+    h1{
+        letter-spacing: 10px;
+        font-size: 50px;
+        margin-bottom: 50px;
+        color: white;
+    }
+}
+nav{
+    position: sticky;
+    z-index: 999;
+    text-decoration: none;
+    font-size: 20px;
+}
+main{
+    background-color: rgb(126, 168, 125);
+    position: relative;
+    top: 40em;
+    height: 1000px;
+    width: 50%;
+    margin-left: 25%;
+    // display: flex;
+}
