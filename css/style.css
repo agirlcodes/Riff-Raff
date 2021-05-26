@@ -62,4 +62,19 @@ main h1, main h4 {
   text-align: center;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .fa {
+  padding: 14px 16px;
+  font-size: 25px;
+  text-decoration: none;
+}
+footer .fa-twitter, footer .fa-envelope, footer .fa-instagram {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */

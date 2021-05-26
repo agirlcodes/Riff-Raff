@@ -1,0 +1,16 @@
+@mixin footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+.fa {
+    padding: 14px 16px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+
+  .fa-twitter, .fa-envelope, .fa-instagram {
+    color: white;
+  }
+}
