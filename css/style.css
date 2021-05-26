@@ -27,7 +27,7 @@ main {
   position: relative;
   top: 35em;
   height: auto;
-  width: 50%;
+  width: 60%;
   margin-left: 25%;
   padding: 10px;
 }
@@ -63,6 +63,9 @@ main h1, main h4 {
 }
 
 footer {
+  position: fixed;
+  top: 90%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   flex-direction: row;
