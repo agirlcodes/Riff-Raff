@@ -1,16 +1,17 @@
 body{
-    background-color: pink;
+    background-color: rgb(192, 219, 255);
 }
 img{
-    position: absolute;
+    position: sticky;
     z-index: 999;
+    top: 0;
     height: 100px;
     width: 60px;
 }
 header{
     position: relative;
     margin-left: 40%;
-    top: 40em;
+    top: 34em;
     h1{
         letter-spacing: 10px;
         font-size: 50px;
@@ -18,18 +19,42 @@ header{
         color: white;
     }
 }
-nav{
-    position: sticky;
-    z-index: 999;
-    text-decoration: none;
-    font-size: 20px;
-}
 main{
-    background-color: rgb(126, 168, 125);
+    background-color: rgb(243, 189, 214);
     position: relative;
-    top: 40em;
-    height: 1000px;
+    top: 35em;
+    height: auto;
     width: 50%;
     margin-left: 25%;
-    // display: flex;
+    padding: 10px;
+    nav{
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        background-color: white;
+        border: 2px solid black;
+        width: auto;
+        height: 50px;
+        a{
+            text-decoration: none;
+            font-size: 20px;        
+        }
+    }
+    video{
+        margin: 10px;
+        margin-left: 10%;
+        height: 300px;
+        width: auto;
+        margin-top: 70px;
+        border: 2px solid black;
+    }
+    p{
+        border: 2px solid black;
+        margin-left: 20%;
+        padding: 10px;
+        width: 55%;
+    }
+    h1, h4{
+        text-align: center;
+    }
 }
