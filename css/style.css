@@ -47,8 +47,8 @@ main nav a {
 main video {
   margin: 10px;
   margin-left: 10%;
-  height: 300px;
-  width: auto;
+  height: 250px;
+  max-width: 400px;
   margin-top: 70px;
   border: 2px solid black;
 }
@@ -78,6 +78,32 @@ footer .fa {
 }
 footer .fa-twitter, footer .fa-envelope, footer .fa-instagram {
   color: white;
+}
+
+@media screen and (max-width: 370px) {
+  img {
+    position: relative;
+  }
+
+  header {
+    margin-left: 1%;
+    top: 25em;
+  }
+
+  main {
+    width: 100%;
+    margin-left: 0%;
+    padding: 0px;
+  }
+  main nav {
+    display: none;
+  }
+  main video {
+    margin-left: 0%;
+    margin-top: 20px;
+    height: auto;
+    width: 335px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
