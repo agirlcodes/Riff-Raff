@@ -61,6 +61,24 @@ main p {
 main h1, main h4 {
   text-align: center;
 }
+main #mc_embed_signup {
+  border: 1px solid black;
+  background: #f3bdd6;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+main #mc_embed_signup .button {
+  background-color: white;
+  color: black;
+}
+main #mc_embed_signup .button:hover {
+  color: white;
+}
+main #separator-div {
+  position: absolute;
+  left: -5000px;
+}
 
 footer {
   position: fixed;
