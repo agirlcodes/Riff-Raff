@@ -33,7 +33,7 @@ header h1 {
 }
 
 main {
-  background-color: #f3bdd6;
+  background-color: #b7eebb;
   position: relative;
   top: 1em;
   height: auto;
@@ -132,7 +132,7 @@ main .entry:before {
   margin-left: -2px;
 }
 main #mc_embed_signup {
-  background: #f3bdd6;
+  background: #b7eebb;
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
   width: 100%;
