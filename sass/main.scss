@@ -2,6 +2,14 @@
 body{
     background-color: rgb(192, 219, 255);
 }
+.background-picture {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(draft-background.jpg);
+    height: 100%;
+}
 img{
     position: sticky;
     z-index: 999;
