@@ -2,15 +2,17 @@
 body{
     background-color: rgb(192, 219, 255);
 }
-.background-picture {
+#background-picture {
+    background-image: url('/images/draft-background.jpg');
+    // border: 1px solid black;
+    height: 750px;
+    width: auto;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(draft-background.jpg);
-    height: 100%;
 }
-img{
+#small-logo{
     position: sticky;
     z-index: 999;
     top: 0;
@@ -31,10 +33,10 @@ header{
 main{
     background-color: rgb(243, 189, 214);
     position: relative;
-    top: 35em;
+    top: 1em;
     height: auto;
     width: 60%;
-    margin-left: 25%;
+    margin-left: 20%;
     padding: 10px;
     nav{
         position: sticky;
@@ -44,6 +46,7 @@ main{
         border: 2px solid black;
         width: auto;
         height: 50px;
+        text-align: center;
         a{
             text-decoration: none;
             font-size: 20px;        
@@ -66,8 +69,68 @@ main{
     h1, h4{
         text-align: center;
     }
+    #big-logo{
+        width: auto;
+        height: 150px;
+        text-align: center;
+        vertical-align: center;
+        position: relative;
+    }
+    #timeline-title {
+        text-align: center;
+    }
+    #timeline-section {
+        height: 2px;
+        background: black;
+        width: 100%;
+        position: relative;
+    }
+    .timeline {
+        white-space: nowrap;
+        overflow-x: scroll;
+        padding: 30px 0 10px 0;
+        position: relative;
+    }
+    .entry{
+        display: inline-block;
+        vertical-align: top;
+        background: white;
+        color: black;
+        padding: 10px;
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        border-top: 2px solid #06182E;
+        border-radius: 8px;
+        min-width: 200px;
+        // max-width: 500px;
+    }
+    .entry:after {
+        content: '';
+        display: block;
+        background: #eee;
+        width: 7px;
+        height: 7px;
+        border-radius: 6px;
+        border: 2px solid black;
+        position: absolute;
+        left: 50%;
+        top: -30px;
+        margin-left: -6px;
+    }
+    .entry:before {
+        content: '';
+        display: block;
+        background: black;
+        width: 2px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        top: -20px;
+        margin-left: -2px;
+      }
     #mc_embed_signup{
-        border: 1px solid black;
+        // border: 1px solid black;
         background: rgb(243, 189, 214); 
         clear:left; 
         font:14px Helvetica,Arial,sans-serif; 
