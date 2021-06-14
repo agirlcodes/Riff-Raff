@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Geoma-Light-demo";
+  src: url("/fonts/Geoma-Light-demo.woff") format("woff"), url("/fonts/Geoma-Light-demo.woff2") format("woff2"), url("/fonts/Geoma-Light-demo.svg#Geoma-Light-demo") format("svg"), url("/fonts/Geoma-Light-demo.eot"), url("/fonts/Geoma-Light-demo.eot?#iefix") format("embedded-opentype"), url("/fonts/Geoma-Light-demo.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   background-color: #c0dbff;
 }
@@ -73,12 +80,33 @@ main h1, main h4 {
   text-align: center;
 }
 main #big-logo {
-  width: auto;
-  height: 150px;
-  margin-left: 20em;
+  background: white;
+  font-family: "Geoma-Light-demo";
+  font-weight: lighter;
+  color: black;
+  font-size: 8em;
   text-align: center;
-  vertical-align: center;
-  position: relative;
+  min-width: 320px;
+  max-width: 450px;
+}
+main #big-logo #icon {
+  height: 100px;
+  width: auto;
+}
+main #big-logo :hover {
+  cursor: pointer;
+  animation: jump 1.2s infinite;
+}
+@keyframes jump {
+  0% {
+    transform: translate(-5%, -5%) scale(1.25, 0.75);
+  }
+  50% {
+    transform: translate(-5%, -10%) scale(1, 1);
+  }
+  100% {
+    transform: translate(-5%, -5%) scale(1.25, 0.75);
+  }
 }
 main #timeline-title {
   text-align: center;
@@ -107,6 +135,14 @@ main .entry {
   border-top: 2px solid #06182E;
   border-radius: 8px;
   min-width: 200px;
+}
+main .entry a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+main .entry a:hover {
+  background: #b7eebb;
 }
 main .entry:after {
   content: "";
