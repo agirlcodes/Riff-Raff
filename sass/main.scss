@@ -84,6 +84,10 @@ main {
         margin-top: 15px;
         border: 2px solid black;
     }
+    #info {
+        border: 0px;
+        font-size: 18px;
+    }
     p {
         border: 2px solid black;
         // margin-left: 20%;
@@ -225,6 +229,9 @@ footer {
     main {
         width: 60%;
         margin: 0 auto;
+        #info {
+            font-size: 22px;
+        }
         p {
             width: 60%;
             margin: 0 auto;

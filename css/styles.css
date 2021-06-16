@@ -75,6 +75,10 @@ main video {
   margin-top: 15px;
   border: 2px solid black;
 }
+main #info {
+  border: 0px;
+  font-size: 18px;
+}
 main p {
   border: 2px solid black;
   text-align: center;
@@ -219,6 +223,9 @@ footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-i
   main {
     width: 60%;
     margin: 0 auto;
+  }
+  main #info {
+    font-size: 22px;
   }
   main p {
     width: 60%;
