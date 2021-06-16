@@ -1,0 +1,229 @@
+@import 'mixins';
+@font-face {
+    font-family: "Geoma-Light-demo";
+    src: url('/fonts/Geoma-Light-demo.woff') format('woff'),
+url('/fonts/Geoma-Light-demo.woff2') format('woff2'),
+url('/fonts/Geoma-Light-demo.svg#Geoma-Light-demo') format('svg'),
+url('/fonts/Geoma-Light-demo.eot'),
+url('/fonts/Geoma-Light-demo.eot?#iefix') format('embedded-opentype'),
+url('/fonts/Geoma-Light-demo.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: rgb(192, 219, 255);
+}
+#background-picture {
+    background-image: url('/images/draft-background.jpg');
+    // border: 1px solid black;
+    height: 750px;
+    width: auto;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#small-logo{
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    height: 100px;
+    width: 60px;
+}
+header{
+    position: relative;
+    margin-left: 40%;
+    top: 34em;
+    h1{
+        letter-spacing: 10px;
+        font-size: 50px;
+        margin-bottom: 50px;
+        color: white;
+    }
+}
+main{
+    background-color: rgb(183, 238, 187);
+    position: relative;
+    top: 1em;
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+    padding: 10px;
+    nav{
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        background-color: white;
+        border: 2px solid black;
+        width: auto;
+        height: 50px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            font-size: 20px;        
+        }
+    }
+    video{
+        margin: 10px;
+        margin-left: 10%;
+        height: 250px;
+        max-width: 400px;
+        margin-top: 70px;
+        border: 2px solid black;
+    }
+    p{
+        border: 2px solid black;
+        margin-left: 20%;
+        padding: 10px;
+        width: 55%;
+    }
+    h1, h4{
+        text-align: center;
+    }
+    #big-logo{
+        background: white;
+        font-family: "Geoma-Light-demo";
+        font-weight: lighter;
+        color: black;
+        font-size: 8em;
+        text-align: center;
+        min-width: 320px;
+        max-width: 450px;
+        #icon{
+            height: 100px;
+            width: auto;
+        }
+        :hover {
+            cursor: pointer;
+            animation: jump 1.2s infinite;
+        }
+    }
+    @keyframes jump {
+        0% {
+            transform: translate(-5%, -5%) scale(1.25, 0.75);
+        }
+        50% {
+            transform: translate(-5%, -10%) scale(1,1);
+        }
+        100% {
+            transform: translate(-5%, -5%) scale(1.25, 0.75);
+        }
+    }
+    #timeline-title {
+        text-align: center;
+    }
+    #timeline-section {
+        height: 2px;
+        background: black;
+        width: 100%;
+        position: relative;
+    }
+    .timeline {
+        white-space: nowrap;
+        overflow-x: scroll;
+        padding: 30px 0 10px 0;
+        position: relative;
+    }
+    .entry{
+        display: inline-block;
+        vertical-align: top;
+        background: white;
+        color: black;
+        padding: 10px;
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        border-top: 2px solid #06182E;
+        border-radius: 8px;
+        min-width: 200px;
+        // max-width: 500px;
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;        
+        &:hover {
+            background:rgb(183, 238, 187);
+        }
+        }
+    }
+    .entry:after {
+        content: '';
+        display: block;
+        background: #eee;
+        width: 7px;
+        height: 7px;
+        border-radius: 6px;
+        border: 2px solid black;
+        position: absolute;
+        left: 50%;
+        top: -30px;
+        margin-left: -6px;
+    }
+    .entry:before {
+        content: '';
+        display: block;
+        background: black;
+        width: 2px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        top: -20px;
+        margin-left: -2px;
+      }
+    #mc_embed_signup{
+        // border: 1px solid black;
+        // background: rgb(243, 189, 214);
+        background: rgb(183, 238, 187); 
+        clear:left; 
+        font:14px Helvetica,Arial,sans-serif; 
+        width:100%;
+        .button {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    #separator-div{
+        position: absolute; 
+        left: -5000px;
+    }
+}
+footer{
+    position: fixed;
+    top: 90%;
+    z-index: 1000;
+    @include footer;
+}
+
+@media screen and (max-width:370px) {
+    img{
+        position: relative;
+    }
+    
+    header {
+        margin-left: 1%;
+        top: 25em;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0%;
+        padding: 0px;
+
+        nav {
+            display: none;
+        }
+
+        video {
+            margin-left: 0%;
+            margin-top: 20px;
+            height: auto;
+            width: 335px;
+        }
+    }
+}
