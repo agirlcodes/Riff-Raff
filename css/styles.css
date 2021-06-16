@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Geoma-Light-demo";
+  src: url("/fonts/Geoma-Light-demo.woff") format("woff"), url("/fonts/Geoma-Light-demo.woff2") format("woff2"), url("/fonts/Geoma-Light-demo.svg#Geoma-Light-demo") format("svg"), url("/fonts/Geoma-Light-demo.eot"), url("/fonts/Geoma-Light-demo.eot?#iefix") format("embedded-opentype"), url("/fonts/Geoma-Light-demo.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background-color: #c0dbff;
+}
+
+#background-picture {
+  background-image: url("/images/draft-background.jpg");
+  height: 650px;
+  width: auto;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#small-logo {
+  z-index: 999;
+  top: 0;
+  height: 100px;
+  width: 60px;
+}
+
+header {
+  position: relative;
+  margin-left: 15%;
+  text-align: center;
+  display: inline;
+  top: -15em;
+}
+header h1 {
+  letter-spacing: 10px;
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: white;
+}
+header #logo-game {
+  position: relative;
+  height: 300px;
+  width: auto;
+  border-radius: 10%;
+}
+
+main {
+  background-color: #b7eebb;
+  position: relative;
+  top: -9em;
+  height: auto;
+  width: 100%;
+}
+main nav {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: white;
+  border-radius: 5px;
+  width: auto;
+  padding: 10px 5px;
+  text-align: center;
+}
+main nav a {
+  text-decoration: none;
+  font-size: 20px;
+}
+main video {
+  margin: 10px;
+  margin-left: 8%;
+  height: auto;
+  width: auto;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+main p {
+  border: 2px solid black;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+main h1, main h4 {
+  text-align: center;
+}
+main #big-logo {
+  background: white;
+  font-family: "Geoma-Light-demo";
+  font-weight: lighter;
+  color: black;
+  font-size: 8em;
+  text-align: center;
+  min-width: 320px;
+  max-width: 450px;
+  margin: 5px;
+  margin-bottom: 25px;
+}
+main #big-logo #icon {
+  height: 100px;
+  width: auto;
+}
+main #big-logo :hover {
+  cursor: pointer;
+  animation: jump 1.2s infinite;
+}
+@keyframes jump {
+  0% {
+    transform: translate(-5%, -5%) scale(1.25, 0.75);
+  }
+  50% {
+    transform: translate(-5%, -10%) scale(1, 1);
+  }
+  100% {
+    transform: translate(-5%, -5%) scale(1.25, 0.75);
+  }
+}
+main #timeline-title {
+  text-align: center;
+}
+main #timeline-section {
+  height: 2px;
+  background: black;
+  width: 100%;
+  position: relative;
+}
+main .timeline {
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding: 30px 0 10px 0;
+  position: relative;
+}
+main .entry {
+  display: inline-block;
+  vertical-align: top;
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  border-top: 2px solid #06182E;
+  border-radius: 8px;
+  min-width: 200px;
+}
+main .entry a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+main .entry a:hover {
+  background: #b7eebb;
+}
+main .entry:after {
+  content: "";
+  display: block;
+  background: #eee;
+  width: 7px;
+  height: 7px;
+  border-radius: 6px;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  margin-left: -6px;
+}
+main .entry:before {
+  content: "";
+  display: block;
+  background: black;
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  margin-left: -2px;
+}
+main #mc_embed_signup {
+  text-align: center;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 95%;
+  margin: 0 auto;
+}
+main #mc_embed_signup .button {
+  background-color: white;
+  color: black;
+}
+main #mc_embed_signup .button:hover {
+  color: white;
+}
+main #separator-div {
+  position: absolute;
+  left: -5000px;
+}
+
+footer {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .fa {
+  padding: 10px 10px;
+  font-size: 22px;
+  text-decoration: none;
+}
+footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-io {
+  color: black;
+}
+
+@media screen and (min-width: 581px) {
+  #small-logo {
+    position: sticky;
+  }
+
+  main {
+    width: 60%;
+    margin: 0 auto;
+  }
+  main p {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  main #big-logo {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
