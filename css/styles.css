@@ -6,12 +6,12 @@
   font-display: swap;
 }
 body {
-  background-color: #c0dbff;
+  background-color: #68b8ca;
 }
 
 #background-picture {
-  background-image: url("/images/draft-background.jpg");
-  height: 650px;
+  background-image: url("/images/websiteTest.gif");
+  height: 450px;
   width: auto;
   position: relative;
   background-position: center;
