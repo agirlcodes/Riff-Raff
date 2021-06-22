@@ -67,13 +67,15 @@ main nav a {
   text-decoration: none;
   font-size: 20px;
 }
-main video {
-  margin: 10px;
-  margin-left: 8%;
-  height: auto;
+main iframe {
   width: auto;
-  margin-top: 15px;
-  border: 2px solid black;
+  height: 300px;
+}
+main #narrative {
+  border: 0px;
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;
 }
 main #info {
   border: 0px;
@@ -224,7 +226,11 @@ footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-i
     width: 60%;
     margin: 0 auto;
   }
-  main #info {
+  main iframe {
+    height: 600px;
+    width: auto;
+  }
+  main #info, main #narrative {
     font-size: 22px;
   }
   main p {

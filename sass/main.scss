@@ -76,13 +76,15 @@ main {
             font-size: 20px;        
         }
     }
-    video {
-        margin: 10px;
-        margin-left: 8%;
-        height: auto;
+    iframe {
         width: auto;
-        margin-top: 15px;
-        border: 2px solid black;
+        height: 300px;
+    }
+    #narrative {
+        border: 0px;
+        font-size: 18px;
+        padding: 5px;
+        margin: 5px;
     }
     #info {
         border: 0px;
@@ -229,7 +231,11 @@ footer {
     main {
         width: 60%;
         margin: 0 auto;
-        #info {
+        iframe {
+            height: 600px;
+            width: auto;
+        }
+        #info, #narrative {
             font-size: 22px;
         }
         p {
