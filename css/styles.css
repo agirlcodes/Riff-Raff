@@ -7,12 +7,12 @@
   font-display: swap;
 }
 body {
-  background-color: #68b8ca;
+  background-color: #a9e4f1;
+  margin: 0%;
 }
 
 #background-picture {
-  background-image: url("/images/websiteTest.gif");
-  height: 300px;
+  background-image: url("/images/websiteLanding.gif");
   width: auto;
   position: relative;
   background-position: center;
@@ -43,7 +43,7 @@ header h1 {
 }
 
 main {
-  background-color: #b7eebb;
+  background-color: #eec374;
   position: relative;
   top: -9em;
   height: auto;
@@ -62,6 +62,14 @@ main nav {
 main nav a {
   text-decoration: none;
   font-size: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-left: 50px;
+  text-align: center;
+  color: black;
+}
+main nav a:hover {
+  font-size: 25px;
+  color: orange;
 }
 main #narrative {
   border: 0px;
@@ -234,7 +242,7 @@ footer .fa {
   text-decoration: none;
 }
 footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-io {
-  color: black;
+  color: white;
 }
 
 @media screen and (min-width: 581px) {
