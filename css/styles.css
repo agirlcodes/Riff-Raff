@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 @font-face {
   font-family: "Geoma-Light-demo";
   src: url("/fonts/Geoma-Light-demo.woff") format("woff"), url("/fonts/Geoma-Light-demo.woff2") format("woff2"), url("/fonts/Geoma-Light-demo.svg#Geoma-Light-demo") format("svg"), url("/fonts/Geoma-Light-demo.eot"), url("/fonts/Geoma-Light-demo.eot?#iefix") format("embedded-opentype"), url("/fonts/Geoma-Light-demo.otf") format("truetype");
@@ -11,7 +12,7 @@ body {
 
 #background-picture {
   background-image: url("/images/websiteTest.gif");
-  height: 450px;
+  height: 300px;
   width: auto;
   position: relative;
   background-position: center;
@@ -31,19 +32,14 @@ header {
   margin-left: 15%;
   text-align: center;
   display: inline;
-  top: -15em;
+  top: -7em;
 }
 header h1 {
   letter-spacing: 10px;
   font-size: 50px;
   margin-bottom: 50px;
   color: white;
-}
-header #logo-game {
-  position: relative;
-  height: 300px;
-  width: auto;
-  border-radius: 10%;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 main {
@@ -67,13 +63,38 @@ main nav a {
   text-decoration: none;
   font-size: 20px;
 }
-main iframe {
-  width: auto;
-  height: 300px;
-}
 main #narrative {
   border: 0px;
   font-size: 18px;
+}
+main #container {
+  text-align: center;
+}
+main #logo-game {
+  position: relative;
+  height: 150px;
+  width: auto;
+  border-radius: 10%;
+  border: 1px solid white;
+}
+main #game-container {
+  text-align: center;
+}
+main #game-container #play-game, main #game-container #hide-game {
+  border: 1px solid white;
+  border-radius: 5em;
+  width: 200px;
+  display: inline;
+  text-align: center;
+  margin-bottom: 1em;
+}
+main #game-container #play-game:hover, main #game-container #hide-game:hover {
+  cursor: pointer;
+  background-color: #8fd4e4;
+}
+main #game-container #demo-game {
+  display: none;
+  margin: 0 auto;
 }
 main #info {
   border: 0px;
@@ -87,6 +108,7 @@ main p {
 }
 main h1, main h4 {
   text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 main #big-logo {
   background: white;
@@ -220,6 +242,11 @@ footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-i
     position: sticky;
   }
 
+  #background-picture {
+    height: 810px;
+    width: auto;
+  }
+
   main {
     width: 60%;
     margin: 0 auto;
@@ -230,6 +257,10 @@ footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-i
   }
   main #info, main #narrative {
     font-size: 22px;
+  }
+  main #logo-game {
+    width: 400px;
+    height: auto;
   }
   main p {
     width: 60%;

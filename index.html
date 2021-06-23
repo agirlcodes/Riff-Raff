@@ -19,7 +19,7 @@
     <logo><img src="images/logo-pill.png" id="small-logo" alt="small-logo"></logo>
     </div>
     <header>
-        <h1>Game Logo</h1>
+        <h1> Kevin's Adventure </h1>
         <!-- <img src="images/draft-logo-game.png" id="logo-game" alt="Kevin's Adventure"> -->
     </header>
     <main>
@@ -31,16 +31,26 @@
         </nav>
 
         <!-- first piece of content -->
-        <h1> Play </h1>
-        <iframe src="https://i.simmer.io/@riffraff/escape-room" style="height: 600px; width: 900px;"></iframe>
+        <!-- <h1> Play </h1> -->
+        <!-- <iframe src="https://i.simmer.io/@riffraff/escape-room" style="height: 600px; width: 900px;"></iframe> -->
 
         <h1> Kevin’s Adventure </h1>
+        
+        <div id="container">
+        <img src="images/game-logo.png" id="logo-game" alt="Kevin's Adventure">
+        </div>
 
         <p id="narrative"> Do you want to go on an adventure? <br>
             To a land filled with treasure beyond your wildest dream. 
             Explore and find hidden artifacts in this island owned by the wealthiest man in all the land, 
             Mr Oldie Mann. <br>
             Solve riddles left by Mr Mann , the closer you get the tougher they are. </p>
+
+        <div id="game-container">
+            <button id="play-game"> <h1> Play :) </h1> </button>
+            <iframe id="demo-game" src="https://i.simmer.io/@riffraff/escape-room" style="height: 600px; width: 900px;"></iframe>
+            <button id="hide-game"> <h1> Hide ): </h1> </button>
+        </div>
 
         <!-- info on sudio -->
         <h1>
@@ -105,6 +115,8 @@
     </footer>
 
 </body>
+
+<script src="js/main.js"></script>
 
     <!-- Universal Google Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
