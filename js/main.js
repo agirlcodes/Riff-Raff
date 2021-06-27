@@ -12,5 +12,5 @@ playButton.addEventListener('click', function (event) {
 hideButton.addEventListener('click', function(event) {
     event.preventDefault();
     demoGame.style.display = "none";
-    commentSection.style.display = "block";
+    commentSection.style.display = "none";
 })
