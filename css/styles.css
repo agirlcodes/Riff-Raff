@@ -104,6 +104,10 @@ main #game-container #demo-game {
   display: none;
   margin: 0 auto;
 }
+main #game-container #comment-section {
+  display: none;
+  margin: 0 auto;
+}
 main #info {
   border: 0px;
   font-size: 18px;
