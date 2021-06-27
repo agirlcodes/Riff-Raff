@@ -38,7 +38,7 @@ header h1 {
   letter-spacing: 10px;
   font-size: 50px;
   margin-bottom: 50px;
-  color: white;
+  color: black;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
@@ -103,6 +103,18 @@ main #game-container #play-game:hover, main #game-container #hide-game:hover {
 main #game-container #demo-game {
   display: none;
   margin: 0 auto;
+}
+main #comment-section {
+  background-color: none;
+  max-height: 270px;
+  text-align: center;
+}
+main #comment-section #commentbox {
+  text-align: center;
+}
+main #comment-section #commentbox iframe {
+  text-align: center;
+  color: black;
 }
 main #info {
   border: 0px;

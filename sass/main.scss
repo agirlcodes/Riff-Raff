@@ -50,7 +50,7 @@ header{
         letter-spacing: 10px;
         font-size: 50px;
         margin-bottom: 50px;
-        color: white;
+        color: black;
         font-family: 'Montserrat Alternates', sans-serif;
     }
 }
@@ -115,6 +115,18 @@ main {
         #demo-game {
             display: none;
             margin: 0 auto;
+        }
+    }
+    #comment-section {
+        background-color: none;
+        max-height: 270px;
+        text-align: center;
+        #commentbox {
+            text-align: center;
+            iframe {
+                text-align: center;
+                color: black;
+            }
         }
     }
     #info {
