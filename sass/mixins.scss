@@ -4,11 +4,11 @@
     flex-direction: row;
     justify-content: space-evenly;
 
-.fa {
+.fa, .fab {
     padding: 10px 10px;
     font-size: 22px;
     text-decoration: none;
-  }
+}
 
   .fa-twitter, .fa-envelope, .fa-instagram, .fa-itch-io {
     color: rgb(255, 255, 255);
