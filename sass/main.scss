@@ -43,15 +43,14 @@ header{
     margin-left: 15%;
     text-align: center;
     display: inline;
-    // top: 34em;
-    // top: -15em;
-    top: -7em;
+    top: -5.9em;
     h1{
         letter-spacing: 10px;
         font-size: 50px;
         margin-bottom: 50px;
         color: rgb(255, 255, 255);
         font-family: 'Montserrat Alternates', sans-serif;
+        background-color: rgb(255, 174, 0);
     }
 }
 
@@ -66,7 +65,7 @@ main {
         z-index: 999;
         top: 0;
         background-color: white;
-        border-radius: 5px;
+        // border-radius: 5px;
         width: auto;
         padding: 10px 5px;
         text-align: center;

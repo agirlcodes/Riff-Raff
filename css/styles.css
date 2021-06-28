@@ -32,7 +32,7 @@ header {
   margin-left: 15%;
   text-align: center;
   display: inline;
-  top: -7em;
+  top: -5.9em;
 }
 header h1 {
   letter-spacing: 10px;
@@ -40,6 +40,7 @@ header h1 {
   margin-bottom: 50px;
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
+  background-color: #ffae00;
 }
 
 main {
@@ -54,7 +55,6 @@ main nav {
   z-index: 999;
   top: 0;
   background-color: white;
-  border-radius: 5px;
   width: auto;
   padding: 10px 5px;
   text-align: center;
