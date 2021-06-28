@@ -50,7 +50,7 @@ header{
         letter-spacing: 10px;
         font-size: 50px;
         margin-bottom: 50px;
-        color: white;
+        color: black;
         font-family: 'Montserrat Alternates', sans-serif;
     }
 }
@@ -113,6 +113,10 @@ main {
             }
         }
         #demo-game {
+            display: none;
+            margin: 0 auto;
+        }
+        #comment-section {
             display: none;
             margin: 0 auto;
         }
@@ -232,6 +236,12 @@ main {
         font:14px Helvetica,Arial,sans-serif; 
         width: 95%;
         margin: 0 auto;
+        #email {
+            border: none;
+            text-align: center;
+            font-size: 16px;
+            display: inline;
+        }
         .button {
             background-color: rgb(255, 255, 255);
             color: black;
@@ -243,6 +253,45 @@ main {
     #separator-div {
         position: absolute; 
         left: -5000px;
+    }
+    #blog-section{
+        text-align: center;
+    }
+    .fa-itch-io {
+        font-size: 150px;
+        text-decoration: none;
+        color: black;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgb(0,0,0,0.9);
+        .modal-details {
+            background-color: #fefefe;
+            margin: 8%;
+            padding: 20px;
+            border: 1px solid rgb(136, 136, 136);
+            width: auto;
+            vertical-align: center;
+        }
+        .close {
+            color: rgb(176, 176, 176);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            &:hover, &:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+              }
+        }
     }
 }
 
