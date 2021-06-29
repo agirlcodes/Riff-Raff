@@ -15,25 +15,30 @@ hideButton.addEventListener('click', function(event) {
     commentSection.style.display = "none";
 })
 
-let modal = document.querySelector('#myModal');
+let modal = document.getElementsByClassName('.modal');
+console.log(modal);
 let closeSign = document.querySelector('.close');
-entryText = document.querySelector ('.entry')
-let entries = document.querySelectorAll('.entry');
-let arrayEntries = [... entries];
 
-for (let index=0; index < arrayEntries.length; index++) {
+let entryText = document.querySelectorAll('.entry');
+console.log(entryText);
+let arrayEntries = [...entryText];
+console.log(arrayEntries);
 
-entryText.addEventListener('click', function (event) {
-    modal.style.display = "block";
-})
+arrayEntries.forEach (arrayEntry => {
+    console.log(arrayEntry.id);
 
-closeSign.addEventListener('click', function (event) {
-    modal.style.display = "none";
-})
+    arrayEntry.addEventListener('click', function(event) {
+        console.log("Hello");
+        modal.style.display = "block";
+    })
 
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    closeSign.addEventListener('click', function(event) {
+        modal.style.display = "none"
+    })
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
-}
-}
+})
