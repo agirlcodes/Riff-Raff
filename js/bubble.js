@@ -1,22 +1,9 @@
 // let interactBubble = document.getElementsByClassName("interact");
 let container = document.getElementsByClassName("interact")
 
+for (let i = 0; i < container.length; i++) {
+    container[i].addEventListener("click", function(){
+      this.style.display = "none";
+    });
+} 
 
-// let numBubbles = ()=>
-// {for (let i = 0; i < container.length; i++) {
-//     const totalBubbles = container[i];
-// }
-// return totalBubbles;
-// alert(totalBubbles)
-// // numBubbles.addEventListener("click", ()=>{
-// //     alert("hiya");
-// //         }
-//     )
-// }
-// alert(container[0])
-container[0].addEventListener("click", ()=>{
-    for (let i = 0; i < container.length; i++) {
-            const totalBubbles = container[i];
-            // alert(totalBubbles)
-        }
-})
