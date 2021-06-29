@@ -22,9 +22,11 @@ body {
 
 #small-logo {
   z-index: 999;
-  top: 0;
   height: 100px;
-  width: 60px;
+  width: auto;
+  margin: 2%;
+  margin-top: 1%;
+  margin-left: 1.5%;
 }
 
 header {
@@ -32,12 +34,12 @@ header {
   margin-left: 15%;
   text-align: center;
   display: inline;
-  top: -5.9em;
+  top: -3.2em;
 }
 header h1 {
   letter-spacing: 10px;
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 5%;
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #ffae00;
@@ -46,14 +48,14 @@ header h1 {
 main {
   background-color: #eec374;
   position: relative;
-  top: -9em;
+  top: -9.15em;
   height: auto;
   width: 100%;
 }
 main nav {
   position: sticky;
   z-index: 999;
-  top: 0;
+  top: 0px;
   background-color: white;
   width: auto;
   padding: 10px 5px;
@@ -61,14 +63,14 @@ main nav {
 }
 main nav a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Montserrat Alternates", sans-serif;
   margin-left: 50px;
   text-align: center;
   color: black;
 }
 main nav a:hover {
-  font-size: 25px;
+  font-size: 30px;
   color: orange;
 }
 main #narrative {
@@ -277,6 +279,58 @@ main .modal .close:hover, main .modal .close:focus {
   cursor: pointer;
 }
 
+aside .bubble {
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  position: absolute;
+  border: #00d4ff;
+  border-radius: 50%;
+  opacity: 70%;
+  margin: 1%;
+  top: 919px;
+  height: 200px;
+  width: 200px;
+  animation: bubble-up 1.2s infinite;
+}
+aside .bubble:after {
+  content: "";
+  display: block;
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  position: absolute;
+  border: #00d4ff;
+  border-radius: 50%;
+  opacity: 70%;
+  margin: 1%;
+  top: 300px;
+  left: 80px;
+  height: 170px;
+  width: 170px;
+}
+aside .bubble:before {
+  content: "";
+  display: block;
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  position: absolute;
+  border: #00d4ff;
+  border-radius: 50%;
+  opacity: 70%;
+  margin: 1%;
+  top: 500px;
+  left: 80px;
+  height: 100px;
+  width: 100px;
+}
+@keyframes bubble-up {
+  0% {
+    transform: translate(-5%, -5%);
+  }
+  50% {
+    transform: translate(-5%, -10%);
+  }
+  100% {
+    transform: translate(-5%, -5%);
+  }
+}
+
 footer {
   position: relative;
   z-index: 1000;
@@ -287,18 +341,16 @@ footer {
 }
 footer .fa, footer .fab {
   padding: 10px 10px;
-  font-size: 22px;
+  white-space: nowrap;
+  font-size: 30px;
   text-decoration: none;
+  text-indent: 30px;
 }
 footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-io {
   color: white;
 }
 
 @media screen and (min-width: 581px) {
-  #small-logo {
-    position: sticky;
-  }
-
   #background-picture {
     height: 810px;
     width: auto;

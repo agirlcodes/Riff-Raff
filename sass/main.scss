@@ -24,7 +24,6 @@ body{
     background-image: url('/images/websiteLanding.gif');
     width: auto;
     position: relative;
-    // top: 150px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,9 +32,12 @@ body{
 
 #small-logo{
     z-index: 999;
-    top: 0;
     height: 100px;
-    width: 60px;
+    width: auto;
+    margin: 2%;
+    margin-top: 1%;
+    margin-left: 1.5%;
+
 }
 
 header{
@@ -43,11 +45,11 @@ header{
     margin-left: 15%;
     text-align: center;
     display: inline;
-    top: -5.9em;
+    top: -3.2em;
     h1{
         letter-spacing: 10px;
         font-size: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 5%;
         color: rgb(255, 255, 255);
         font-family: 'Montserrat Alternates', sans-serif;
         background-color: rgb(255, 174, 0);
@@ -57,13 +59,13 @@ header{
 main {
     background-color: rgb(238, 195, 116);
     position: relative;
-    top: -9em;
+    top: -9.15em;
     height: auto;
     width: 100%;
     nav {
         position: sticky;
         z-index: 999;
-        top: 0;
+        top: -0px;
         background-color: white;
         // border-radius: 5px;
         width: auto;
@@ -71,17 +73,18 @@ main {
         text-align: center;
         a {
             text-decoration: none;
-            font-size: 20px;      
+            font-size: 25px;      
             font-family: 'Montserrat Alternates', sans-serif; 
             margin-left: 50px; 
             text-align: center;
             color: black;
         }
         a:hover{
-            font-size: 25px;   
+            font-size: 30px;   
             color: orange; 
         }
     }
+
     #narrative {
         border: 0px;
         font-size: 18px;
@@ -293,7 +296,45 @@ main {
         }
     }
 }
-
+aside{
+    .bubble{
+        @include bubble;
+        top: 919px;
+        height: 200px;
+        width: 200px;
+        animation: bubble-up 1.2s infinite;
+    }
+    .bubble:after{
+        content: '';
+        display: block;
+        @include bubble;
+        top: 300px;
+        left: 80px;
+        height: 170px;
+        width: 170px;
+    }
+    .bubble:before{
+        content: '';
+        display: block;
+        @include bubble;
+        top: 500px;
+        left: 80px;
+        height: 100px;
+        width: 100px;
+    }
+    // working on animation for bubbles
+    @keyframes bubble-up{
+        0% {
+            transform: translate(-5%, -5%) ;
+        }
+        50% {
+            transform: translate(-5%, -10%) ;
+        }
+        100% {
+            transform: translate(-5%, -5%);
+        }
+    }
+}
 footer {
     position: relative;
     // margin-left: -90%;
@@ -304,9 +345,9 @@ footer {
 }
 
 @media screen and (min-width:581px) {
-    #small-logo {
-    position: sticky;
-    }
+    // #small-logo {
+    // position: sticky;
+    // }
 
     #background-picture {
         height: 810px;
