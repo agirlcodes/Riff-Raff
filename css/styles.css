@@ -36,6 +36,7 @@ header {
   text-align: center;
   display: inline;
   top: -3.2em;
+  z-index: 999;
 }
 header h1 {
   letter-spacing: 10px;
@@ -44,6 +45,8 @@ header h1 {
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #ffae00;
+  padding: 1%;
+  z-index: 999;
 }
 
 main {
@@ -52,6 +55,7 @@ main {
   top: -9.15em;
   height: auto;
   width: 100%;
+  z-index: 999;
 }
 main nav {
   display: flex;
@@ -60,16 +64,15 @@ main nav {
   top: 0px;
   background-color: white;
   width: auto;
-  height: 50px;
-  padding: 10px 5px;
+  height: 60px;
   justify-content: space-evenly;
 }
 main nav a {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
+  padding: 1%;
   font-family: "Montserrat Alternates", sans-serif;
-  margin-left: 50px;
   color: black;
 }
 main nav a:hover {
@@ -281,6 +284,7 @@ main .modal .close:hover, main .modal .close:focus {
 
 footer {
   position: relative;
+  height: 100px;
   z-index: 1000;
   display: flex;
   align-items: center;

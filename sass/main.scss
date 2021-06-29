@@ -1,4 +1,5 @@
 @import 'mixins';
+// @import 'background';
 @font-face {
     font-family: "Geoma-Light-demo";
     src: url('/fonts/Geoma-Light-demo.woff') format('woff'),
@@ -20,7 +21,6 @@ body{
     margin: 0%;
     z-index: 999;
 }
-
 #background-picture {
     background-image: url('/images/websiteLanding.gif');
     width: auto;
@@ -29,8 +29,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 #small-logo{
     z-index: 999;
     height: 100px;
@@ -40,13 +38,13 @@ body{
     margin-left: 1.5%;
 
 }
-
 header{
     position: relative;
     margin-left: 15%;
     text-align: center;
     display: inline;
     top: -3.2em;
+    z-index: 999;
     h1{
         letter-spacing: 10px;
         font-size: 50px;
@@ -54,15 +52,17 @@ header{
         color: rgb(255, 255, 255);
         font-family: 'Montserrat Alternates', sans-serif;
         background-color: rgb(255, 174, 0);
+        padding: 1%;
+        z-index: 999;
     }
 }
-
 main {
     background-color: rgb(238, 195, 116);
     position: relative;
     top: -9.15em;
     height: auto;
     width: 100%;
+    z-index: 999;
     nav {
         display: flex;
         position: sticky;
@@ -70,15 +70,14 @@ main {
         top: -0px;
         background-color: white;
         width: auto;
-        height: 50px;
-        padding: 10px 5px;
+        height: 60px;
         justify-content: space-evenly;
         a {
             text-align: center;
             text-decoration: none;
-            font-size: 25px;      
+            font-size: 25px;     
+            padding: 1%; 
             font-family: 'Montserrat Alternates', sans-serif; 
-            margin-left: 50px; 
             color: black;
         }
         a:hover{
@@ -296,9 +295,7 @@ main {
 }
 footer {
     position: relative;
-    // margin-left: -90%;
-    // width: 50px;
-    // top: 90%;
+    height: 100px;
     z-index: 1000;
     @include footer;
 }
