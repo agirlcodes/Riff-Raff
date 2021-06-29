@@ -92,9 +92,39 @@
     <a target="_blank"  href="https://riffraffstudios.itch.io/" class="fab fa-itch-io"> </a>
 </div>
 
-<div id="weekOne" class="modal">
+<h3 id="timeline-title"> Development Timeline </h3>
+<p> <i> Follow our progress through our 13-week development project! </i> </p>
+<div id="timeline-section">
+    <div class="timeline">
+        <button class="modal-open" data-modal="modal1">
+            <h2> Start of Adventure </h2>
+        </button>
+        <button class="modal-open" data-modal="modal2">
+            <h2> Second week </h2>
+        </button>
+        <button class="modal-open" data-modal="modal3">
+            <h2> Third week </h2>
+        </button>
+        <button class="modal-open" data-modal="modal4">
+            <h2> Fourth week </h2>
+        </button>
+        <button class="modal-open" data-modal="modal5">
+            <h2> Fifth week </h2>
+        </button>
+        <button class="modal-open" data-modal="modal6">
+            <h2> Sixth week </h2>
+        </button>
+        <button class="modal-open" data-modal="modal7">
+            <h2> Seventh week </h2>
+        </button>
+        <button class="modal-open" data-modal="modal8">
+            <h2> Eighth week </h2>
+        </button>
+    </div>
+</div>
+
+<div class="modal" id="modal1">
     <div class="modal-details" >
-        <!--'&times' is a multiplication sign in html (way to draw x to close) -->
         <span class="close">&times;</span> 
         <article class="info-container">
             <h1> First steps through our project! </h1>
@@ -125,61 +155,139 @@
         </article>
     </div>
 
-    <div id="weekTwo" class="modal">
+    <div class="modal" id="modal2">
     <div class="modal-details">
         <span class="close">&times;</span> 
-        <article class="info-container" week_id="2">
-            <h1> First steps through our project! </h1>
+        <article class="info-container">
+            <h1> Second steps to follow! </h1>
             <ul>
                 <li>
-                    In the second week the team focused on coming up with prototypes for the games core mechanics. This included character movement, a collection system and the level objective’s first iteration. At this point these mechanics were all in separate projects because they were still in the prototype stage.
+                    In the second week the team focused on coming up with prototypes for the games core mechanics. 
+                    This included character movement, a collection system and the level objective’s first iteration. 
+                    At this point these mechanics were all in separate projects because they were still in the prototype stage.
                 </li>
                 <li>
                     The player's objective mechanic was designed to challenge the player's observation skills. 
                 </li>
                 <li>
-                    We created gold coins as an item for the collection system. This mechanic was implemented to offer a secondary objective for the player. It was designed to enhance player guidance in the form of incentive to collect more coins.
+                    We created gold coins as an item for the collection system. This mechanic was implemented to 
+                    offer a secondary objective for the player. It was designed to enhance player guidance in 
+                    the form of incentive to collect more coins.
                 </li>
                 <li>
-                    The game’s target age is 12 and over so we wanted the art style to be low poly with colours relating to nature such as green, blue and brown.
+                    The game’s target age is 12 and over so we wanted the art style to be low poly with colours 
+                    relating to nature such as green, blue and brown.
                 </li>
             </ul>
         </article>
     </div>
     </div>
 
-</div>
+    <div class="modal" id="modal3">
+        <div class="modal-details">
+            <span class="close">&times;</span> 
+            <article class="info-container">
+                <h1> First thoughts about Level Design. </h1>
+                <ul>
+                    <li>
+                        Week 3 was devoted to talking about level design and how we can use it to optimize our mechanics. 
+                        We came up with 3 iterations of levels in what would ultimately become the 
+                        area of exploitation for the player. This was a useful component of the game to 
+                        establish early because then mechanics and narrative can be implemented and adjusted 
+                        to suit the level design.
+                    </li>
+                    <li>
+                        The most important goal for the team in terms of level design was for the player to know how 
+                        to traverse the level without it becoming too complicated to figure out where things are. 
+                    </li>
+                </ul>
+            </article>
+        </div>
+        </div>
 
-<h3 id="timeline-title"> Development Timeline </h3>
-<p> <i> Follow our progress through our 13-week development project! </i> </p>
-<div id="timeline-section">
-    <div class="timeline">
-        <div class="entry" id="weekOne">
-            <h2> Start of Adventure </h2>
-            <!-- <a href="https://riffraffstudios.itch.io/welcome" target="_blank"> Welcome to our adventure </a> -->
+        <div class="modal" id="modal4">
+            <div class="modal-details">
+                <span class="close">&times;</span>
+                <article class="info-container">
+                    <h1> Good progress! </h1>
+                    <p> Overall this week was quite a productive one for us game students. </p>
+                    <ul>
+                        <li>
+                            In our group meeting we finalised the narrative that we wanted to go with for 
+                            the game which was ‘A rich man has sent you on an adventure to an island to 
+                            find the hidden treasure that’s shown on the map you were given.’ 
+                            We went with this as it keeps the game lighthearted and keeps in with our target audience of 12+. 
+                            We also decided on a name for the game which was ‘Kevin’s Adventure’.
+                        </li>
+                        <li>
+                            We also started to get a basic layout of the level made within the project. 
+                            Some simple trees, coins and a path were added which started to form the 
+                            basic outline of the main route that the player would need to take. 
+                            Points of interest in the form of large pink cubes were also added to 
+                            assist in showing the player where they need to go.
+                        </li>
+                        
+                    </ul>
+
+                </article>
+            </div>
         </div>
-        <div class="entry" id="weekTwo">
-            <h2> Second week </h2>
+
+        <div class="modal" id="modal5">
+            <div class="modal-details">
+                <span class="close">&times;</span>
+                <article class="info-container">
+                    <h1> Character time! </h1>
+                    <p> 
+                        This week we worked on getting a 3d model for our character and started to rig 
+                        walking animation for him. We used Inverse kinematics and raycast to do this. 
+                        We finished our textures for our terrain. We planned out a final draft for our schedule 
+                        after calculating what we had done so far and what we had left to do.
+                    </p>
+                </article>
+            </div>
         </div>
-        <div class="entry" id="weekThree">
-            <h2> Third week </h2>
+
+        <div class="modal" id="modal6">
+            <div class="modal-details">
+                <span class="close">&times;</span>
+                <article class="info-container">
+                    <h1> Last touches for landing page illustration  </h1>
+                    <p>
+                        The web developers have made good progress. For this week the web developers 
+                        have the task of finishing the landing page illustration, despite it not looking like much so 
+                        far it will develop into a friendly and bubbly first impression. 
+                        Also, tasked with designing the games logo, my fello web developer created a truly amazing 
+                        template for the game’s logo.  Since we have completed our wireframes in Visual Studio Code, 
+                        I feel confident in this projects direction and most importantly meeting the self-given deadline.
+                    </p>
+                </article>
+            </div>
         </div>
-        <div class="entry" id="weekFour">
-            <h2> Fourth week </h2>
+
+        <div class="modal" id="modal7">
+            <div class="modal-details">
+                <span class="close">&times;</span>
+                <article class="info-container">
+                    <h1> Reaching the end of web design </h1>
+                    <p>
+                        The most exciting part this week is presenting the completed illustration for the landing page, 
+                        having researched illustrations that match the aesthetic and week of learning Adobe illusatrator 
+                        commands and shortcuts, this week I present the final product to the group. <br>
+                        They liked the landing page! One step closer to the finished product!
+                    </p>
+                </article>
+            </div>
         </div>
-        <div class="entry" id="weekFive">
-            <h2> Fifth week </h2>
+
+        <div class="modal" id="modal8">
+            <div class="modal-details">
+                <span class="close">&times;</span>
+                <article class="info-container">
+                    
+                </article>
+            </div>
         </div>
-        <div class="entry" id="weekSix">
-            <h2> Sixth week </h2>
-        </div>
-        <div class="entry" id="weekSeven">
-            <h2> Seventh week </h2>
-        </div>
-        <div class="entry" id="weekEight">
-            <h2> Eighth week </h2>
-        </div>
-    </div>
 </div>
 </main>
 <section>

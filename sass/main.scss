@@ -182,7 +182,7 @@ main {
         padding: 30px 0 10px 0;
         position: relative;
     }
-    .entry{
+    .modal-open{
         display: inline-block;
         vertical-align: top;
         background: white;
@@ -204,7 +204,7 @@ main {
         }
         }
     }
-    .entry:after {
+    .modal-open:after {
         content: '';
         display: block;
         background: #eee;
@@ -217,7 +217,7 @@ main {
         top: -30px;
         margin-left: -6px;
     }
-    .entry:before {
+    .modal-open:before {
         content: '';
         display: block;
         background: black;
@@ -272,11 +272,12 @@ main {
         overflow: auto;
         background-color: rgb(0, 0, 0);
         background-color: rgb(0,0,0,0.9);
+        // background-color: rgba(120, 182, 216, 0.9);
         .modal-details {
             background-color: #fefefe;
             margin: 8%;
             padding: 20px;
-            border: 1px solid rgb(136, 136, 136);
+            border: 1px solid black;
             width: auto;
             vertical-align: center;
         }

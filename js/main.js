@@ -1,3 +1,4 @@
+    // Display and hide game.
 let playButton = document.getElementById('play-game');
 let hideButton = document.getElementById('hide-game');
 const demoGame = document.querySelector('#demo-game');
@@ -15,32 +16,71 @@ hideButton.addEventListener('click', function(event) {
     commentSection.style.display = "none";
 })
 
-let modal = document.getElementsByClassName('.modal');
-console.log(modal);
-let closeSign = document.querySelector('.close');
+    // Display and hide modal.
 
-let entryText = document.querySelectorAll('.entry');
-console.log(entryText);
-let arrayEntries = [...entryText];
-console.log(arrayEntries);
+let modalButtons = document.querySelectorAll('.modal-open');
 
-arrayEntries.forEach (arrayEntry => {
-    console.log(arrayEntry.id);
+modalButtons.forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        let modal = button.getAttribute('data-modal');
 
-    arrayEntry.addEventListener('click', function(event) {
-        console.log("Hello");
-        for (let index=0; index < modal.length; index++) {
-            modal.style.display = "block";
-        }
+        document.getElementById(modal).style.display = "block";
     })
-
-    closeSign.addEventListener('click', function(event) {
-        modal.style.display = "none"
-    })
-
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
 })
+
+let closeSign = document.querySelector('.close');
+closeSign.addEventListener('click', function (event) {
+    let modal = event.target('.modal').style.display = "none";
+})
+
+window.onclick = function(e) {
+    if(e.target.className == 'modal'){
+        e.target.style.display = "none";
+    }
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let modal = document.querySelectorAll('.modal');
+// console.log(modal);
+// let closeSign = document.querySelector('.close');
+
+// let entryText = document.querySelectorAll('.entry');
+// console.log(entryText);
+// let arrayEntries = [...entryText];
+// console.log(arrayEntries);
+
+// function showModal(id) {
+//     let modalWithID = document.getElementById(id);
+//     modalWithID.style.display = "block";
+// }
+
+// function hideModals() {
+//     modal.forEach(modalWithID => {
+//         modalWithID.style.display = "none";
+//     })
+// }
+
+// arrayEntries.forEach (arrayEntry => {
+//     console.log(arrayEntry.id);
+
+//     arrayEntry.addEventListener('click', function(event) {
+//         console.log("Hello");
+//         showModal(arrayEntry.id)
+        
+//     })
+
+//     closeSign.addEventListener('click', function(event) {
+//         hideModals();
+//     })
+
+//     window.onclick = function (event) {
+//         if (event.target == modal) {
+//             // modal.style.display = "none";
+//             hideModals();
+//         }
+//     }
+// })
