@@ -29,7 +29,9 @@ arrayEntries.forEach (arrayEntry => {
 
     arrayEntry.addEventListener('click', function(event) {
         console.log("Hello");
-        modal.style.display = "block";
+        for (let index=0; index < modal.length; index++) {
+            modal.style.display = "block";
+        }
     })
 
     closeSign.addEventListener('click', function(event) {
