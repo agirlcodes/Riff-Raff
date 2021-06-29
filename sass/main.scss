@@ -18,6 +18,7 @@ url('/fonts/Geoma-Light-demo.otf') format('truetype');
 body{
     background-color: rgb(169, 228, 241);
     margin: 0%;
+    z-index: 999;
 }
 
 #background-picture {
