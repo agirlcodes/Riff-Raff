@@ -44,6 +44,7 @@ header h1 {
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #ffae00;
+  padding: 1%;
 }
 
 main {
@@ -281,6 +282,7 @@ main .modal .close:hover, main .modal .close:focus {
 
 footer {
   position: relative;
+  height: 100px;
   z-index: 1000;
   display: flex;
   align-items: center;

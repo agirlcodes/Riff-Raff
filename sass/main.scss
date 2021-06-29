@@ -18,9 +18,9 @@ url('/fonts/Geoma-Light-demo.otf') format('truetype');
 body{
     background-color: rgb(169, 228, 241);
     margin: 0%;
+    // margin-bottom: 5%;
     z-index: 999;
 }
-
 #background-picture {
     background-image: url('/images/websiteLanding.gif');
     width: auto;
@@ -29,8 +29,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 #small-logo{
     z-index: 999;
     height: 100px;
@@ -40,7 +38,6 @@ body{
     margin-left: 1.5%;
 
 }
-
 header{
     position: relative;
     margin-left: 15%;
@@ -54,9 +51,9 @@ header{
         color: rgb(255, 255, 255);
         font-family: 'Montserrat Alternates', sans-serif;
         background-color: rgb(255, 174, 0);
+        padding: 1%;
     }
 }
-
 main {
     background-color: rgb(238, 195, 116);
     position: relative;
@@ -295,9 +292,7 @@ main {
 }
 footer {
     position: relative;
-    // margin-left: -90%;
-    // width: 50px;
-    // top: 90%;
+    height: 100px;
     z-index: 1000;
     @include footer;
 }
