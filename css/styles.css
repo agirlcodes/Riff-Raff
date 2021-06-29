@@ -281,6 +281,22 @@ main .modal .close:hover, main .modal .close:focus {
   text-decoration: none;
   cursor: pointer;
 }
+main .level {
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+main #kevin {
+  width: 400px;
+  height: auto;
+}
+main #day-night {
+  width: 450px;
+  height: auto;
+}
+main ul {
+  text-align: center;
+}
 
 footer {
   position: relative;
