@@ -1,5 +1,4 @@
 body {
-  color: #333;
   font: 100% Lato, Arial, Sans Serif;
   height: 100vh;
   margin: 0;
@@ -13,7 +12,7 @@ body {
   left: 0;
   position: fixed;
   right: 0;
-  top: 0;
+  top: -100px;
   z-index: -1;
 }
 
