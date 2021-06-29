@@ -53,20 +53,22 @@ main {
   width: 100%;
 }
 main nav {
+  display: flex;
   position: sticky;
   z-index: 999;
   top: 0px;
   background-color: white;
   width: auto;
+  height: 50px;
   padding: 10px 5px;
-  text-align: center;
+  justify-content: space-evenly;
 }
 main nav a {
+  text-align: center;
   text-decoration: none;
   font-size: 25px;
   font-family: "Montserrat Alternates", sans-serif;
   margin-left: 50px;
-  text-align: center;
   color: black;
 }
 main nav a:hover {
@@ -277,58 +279,6 @@ main .modal .close:hover, main .modal .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-aside .bubble {
-  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-  position: absolute;
-  border: #00d4ff;
-  border-radius: 50%;
-  opacity: 70%;
-  margin: 1%;
-  top: 919px;
-  height: 200px;
-  width: 200px;
-  animation: bubble-up 1.2s infinite;
-}
-aside .bubble:after {
-  content: "";
-  display: block;
-  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-  position: absolute;
-  border: #00d4ff;
-  border-radius: 50%;
-  opacity: 70%;
-  margin: 1%;
-  top: 300px;
-  left: 80px;
-  height: 170px;
-  width: 170px;
-}
-aside .bubble:before {
-  content: "";
-  display: block;
-  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-  position: absolute;
-  border: #00d4ff;
-  border-radius: 50%;
-  opacity: 70%;
-  margin: 1%;
-  top: 500px;
-  left: 80px;
-  height: 100px;
-  width: 100px;
-}
-@keyframes bubble-up {
-  0% {
-    transform: translate(-5%, -5%);
-  }
-  50% {
-    transform: translate(-5%, -10%);
-  }
-  100% {
-    transform: translate(-5%, -5%);
-  }
 }
 
 footer {

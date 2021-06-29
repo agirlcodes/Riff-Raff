@@ -63,20 +63,21 @@ main {
     height: auto;
     width: 100%;
     nav {
+        display: flex;
         position: sticky;
         z-index: 999;
         top: -0px;
         background-color: white;
-        // border-radius: 5px;
         width: auto;
+        height: 50px;
         padding: 10px 5px;
-        text-align: center;
+        justify-content: space-evenly;
         a {
+            text-align: center;
             text-decoration: none;
             font-size: 25px;      
             font-family: 'Montserrat Alternates', sans-serif; 
             margin-left: 50px; 
-            text-align: center;
             color: black;
         }
         a:hover{
@@ -293,45 +294,6 @@ main {
                 text-decoration: none;
                 cursor: pointer;
               }
-        }
-    }
-}
-aside{
-    .bubble{
-        @include bubble;
-        top: 919px;
-        height: 200px;
-        width: 200px;
-        animation: bubble-up 1.2s infinite;
-    }
-    .bubble:after{
-        content: '';
-        display: block;
-        @include bubble;
-        top: 300px;
-        left: 80px;
-        height: 170px;
-        width: 170px;
-    }
-    .bubble:before{
-        content: '';
-        display: block;
-        @include bubble;
-        top: 500px;
-        left: 80px;
-        height: 100px;
-        width: 100px;
-    }
-    // working on animation for bubbles
-    @keyframes bubble-up{
-        0% {
-            transform: translate(-5%, -5%) ;
-        }
-        50% {
-            transform: translate(-5%, -10%) ;
-        }
-        100% {
-            transform: translate(-5%, -5%);
         }
     }
 }

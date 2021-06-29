@@ -18,23 +18,15 @@
 }
 
 @mixin bubble {
-  // background-image: radial-gradient(circle, #5c0067 20%, #00d4ff 100%);
-  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-  position: absolute;
-  border: #00d4ff;
-  border-radius: 50%;
-  opacity: 70%;
-  margin: 1%;
-}
-@mixin highlight{
-  height: 900px;
-  width: 500px;
-  position: relative;
-  background-color: white;
-  background-color: rgb(255, 255, 255);
-  // width: 50px;
-  // height: 50px;
-  // border-radius: 50%;
-  // border: 4px solid #222;
-  // box-shadow: inset 0px 16px #999, inset 0px 16px 1px 1px #999;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+      position: absolute;
+      border-radius: 50%;
+
+  .bubble::after{
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); 
+      left: 10px;
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+  }
 }
