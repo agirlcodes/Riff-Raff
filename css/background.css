@@ -26,79 +26,57 @@ body {
 }
 /* ANIMATIONS */
 .x1 {
-  animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: -5%;
-  top: 5%;
+  animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
   transform: scale(0.6);
 }
 
 .x2 {
-  animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  animation-delay: 6s;
-  left: 5%;
-  top: 80%;
+  animation: animateBubble 13s linear infinite, sideWays 4s ease-in-out infinite alternate;
   transform: scale(0.4);
 }
 
 .x3 {
   animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  animation-delay: 9s;
-  left: 10%;
-  top: 40%;
+  left: 80%;
   transform: scale(0.7);
 }
 
 .x4 {
-  animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 20%;
-  top: 0;
+  animation: animateBubble 9s linear infinite, sideWays 3s ease-in-out infinite alternate;
   transform: scale(0.3);
 }
 
 .x5 {
-  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  animation-delay: 10s;
-  left: 30%;
-  top: 50%;
+  animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
   transform: scale(0.5);
 }
 
 .x6 {
   animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 50%;
-  top: 0;
   transform: scale(0.8);
 }
 
 .x7 {
   animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  animation-delay: 1s;
   left: 65%;
-  top: 70%;
   transform: scale(0.4);
 }
 
 .x8 {
-  animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  animation-delay: 4s;
+  animation: animateBubble 15s linear infinite, sideWays 3s ease-in-out infinite alternate;
   left: 80%;
-  top: 10%;
   transform: scale(0.3);
 }
 
 .x9 {
   animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  animation-delay: 7s;
-  left: 90%;
-  top: 50%;
+  left: 70%;
   transform: scale(0.6);
 }
 
 .x10 {
   animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  animation-delay: 2s;
   left: 80%;
-  top: 80%;
   transform: scale(0.3);
 }
 
