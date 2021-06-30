@@ -12,7 +12,7 @@ body {
 /* KEYFRAMES */
 @keyframes animateBubble {
     0% {
-        margin-top: 1000px;
+        margin-top: 1000px;  // use % of the screen -- using css variables* set animation to be dynamic
     }
     100% {
         margin-top: -44%;
