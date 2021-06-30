@@ -285,17 +285,17 @@ main {
             width: auto;
             vertical-align: center;
         }
-        // .close {
-        //     color: rgb(176, 176, 176);
-        //     float: right;
-        //     font-size: 28px;
-        //     font-weight: bold;
-        //     &:hover, &:focus {
-        //         color: black;
-        //         text-decoration: none;
-        //         cursor: pointer;
-        //       }
-        // }
+        .close {
+            color: rgb(176, 176, 176);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            &:hover, &:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+              }
+        }
     }
     // styling content in modal
     .level {
