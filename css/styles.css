@@ -218,6 +218,11 @@ main .modal-open:before {
   top: -20px;
   margin-left: -2px;
 }
+main .update {
+  width: 450px;
+  height: auto;
+  vertical-align: middle;
+}
 main #mc_embed_signup {
   text-align: center;
   clear: left;
