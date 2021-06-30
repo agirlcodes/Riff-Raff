@@ -17,28 +17,29 @@ hideButton.addEventListener('click', function(event) {
 })
 
     // Display and hide modal.
+    let modalButtons = document.querySelectorAll('.modal-open');
+    let closeSign = document.querySelector('.close');
+    let modal = document.getElementsByClassName('modal');
+    
+        modalButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                let dataModal = button.getAttribute('data-modal');
+                document.getElementById(dataModal).style.display = "block";
+            })
+        })
 
-let modalButtons = document.querySelectorAll('.modal-open');
+        // closeSign.addEventListener('click', function (event) {
+        //         event.preventDefault();
+        //     let modal = document.querySelector('.modal-open');
+        //         modal.style.display = "none";
+        // })
 
-modalButtons.forEach(button => {
-    button.addEventListener('click', function(event) {
-        event.preventDefault();
-        let modal = button.getAttribute('data-modal');
-
-        document.getElementById(modal).style.display = "block";
-    })
-})
-
-let closeSign = document.querySelector('.close');
-closeSign.addEventListener('click', function (event) {
-    let modal = event.target('.modal').style.display = "none";
-})
-
-window.onclick = function(e) {
-    if(e.target.className == 'modal'){
-        e.target.style.display = "none";
-    }
-}
+        window.onclick = function(e) {
+            if(e.target.className == 'modal'){
+                e.target.style.display = "none";
+            }
+        }
 
 
 
