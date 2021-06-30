@@ -18,8 +18,12 @@ hideButton.addEventListener('click', function(event) {
 
     // Display and hide modal.
     let modalButtons = document.querySelectorAll('.modal-open');
+    // modal-open connected to buttons
+    // attribute is for css
     let closeSign = document.querySelector('.close');
+    // getting the x
     let modal = document.getElementsByClassName('modal');
+    // getting all the elments through class
     
         modalButtons.forEach(button => {
             button.addEventListener('click', function(event) {
@@ -29,13 +33,13 @@ hideButton.addEventListener('click', function(event) {
             })
         })
 
-        // for each modal {apply this function}
+        // for each modal {apply this function if (this is clicked== do this) else(do this)}
 
-        // closeSign.addEventListener('click', function (event) {
-        //         event.preventDefault();
-        //     let modal = document.querySelector('.modal-open');
-        //         modal.style.display = "none";
-        // })
+        closeSign.addEventListener('click', function (event) {
+                event.preventDefault();
+            let modal = document.querySelector('.modal-open');
+                modal.style.display = "none";
+        })
 
         window.onclick = function(e) {
             if(e.target.className == 'modal'){
