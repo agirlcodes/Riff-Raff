@@ -13,7 +13,7 @@ body {
 }
 
 #background-picture {
-  background-image: url("/images/websiteLanding.gif");
+  background-image: url("/images/landingPage.svg");
   width: auto;
   position: relative;
   background-position: center;
@@ -123,7 +123,7 @@ main #info {
 main p {
   text-align: center;
 }
-main h1, main h4 {
+main h1, main h2, main h3, main h4 {
   text-align: center;
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -275,17 +275,6 @@ main .modal .modal-details {
   width: auto;
   vertical-align: center;
 }
-main .modal .close {
-  color: #b0b0b0;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-main .modal .close:hover, main .modal .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 main .level {
   width: 500px;
   height: auto;
@@ -296,11 +285,20 @@ main #kevin {
   height: auto;
 }
 main #day-night {
-  width: 450px;
+  width: 600px;
   height: auto;
+  margin-left: 30%;
+}
+main #img1, main #img2, main #img3, main #img4, main #img5 {
+  padding: 1%;
+}
+main #img4, main #img5 {
+  height: 300px;
+  width: auto;
 }
 main ul {
   text-align: center;
+  list-style-type: none;
 }
 
 footer {
