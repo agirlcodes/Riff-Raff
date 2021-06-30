@@ -39,55 +39,8 @@ hideButton.addEventListener('click', function(event) {
             }
         })
 
-        // for each modal {apply this function if (this is clicked== do this) else(do this)}
-
         window.onclick = function(e) {
-            if(e.target.className == 'modal'){
+            if(e.target.className == 'modal') {
                 e.target.style.display = "none";
             }
         }
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// let modal = document.querySelectorAll('.modal');
-// console.log(modal);
-// let closeSign = document.querySelector('.close');
-
-// let entryText = document.querySelectorAll('.entry');
-// console.log(entryText);
-// let arrayEntries = [...entryText];
-// console.log(arrayEntries);
-
-// function showModal(id) {
-//     let modalWithID = document.getElementById(id);
-//     modalWithID.style.display = "block";
-// }
-
-// function hideModals() {
-//     modal.forEach(modalWithID => {
-//         modalWithID.style.display = "none";
-//     })
-// }
-
-// arrayEntries.forEach (arrayEntry => {
-//     console.log(arrayEntry.id);
-
-//     arrayEntry.addEventListener('click', function(event) {
-//         console.log("Hello");
-//         showModal(arrayEntry.id)
-        
-//     })
-
-//     closeSign.addEventListener('click', function(event) {
-//         hideModals();
-//     })
-
-//     window.onclick = function (event) {
-//         if (event.target == modal) {
-//             // modal.style.display = "none";
-//             hideModals();
-//         }
-//     }
-// })
