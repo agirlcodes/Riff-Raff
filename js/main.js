@@ -29,6 +29,8 @@ hideButton.addEventListener('click', function(event) {
             })
         })
 
+        // for each modal {apply this function}
+
         // closeSign.addEventListener('click', function (event) {
         //         event.preventDefault();
         //     let modal = document.querySelector('.modal-open');
