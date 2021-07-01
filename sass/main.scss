@@ -53,7 +53,7 @@ header{
         font-family: 'Montserrat Alternates', sans-serif;
         background-color: rgb(255, 174, 0);
         padding: 1%;
-        z-index: 999;
+        z-index: 2;
     }
 }
 main {
@@ -62,7 +62,7 @@ main {
     top: -9.15em;
     height: auto;
     width: 100%;
-    z-index: 999;
+    z-index: 2;
     nav {
         display: flex;
         position: sticky;
@@ -170,7 +170,7 @@ main {
         text-align: center;
     }
     #timeline-section {
-        height: 2px;
+        height: 5px;
         background: black;
         width: 100%;
         position: relative;
@@ -180,6 +180,9 @@ main {
         overflow-x: scroll;
         padding: 30px 0 10px 0;
         position: relative;
+        :hover {
+            cursor: pointer;
+        }
     }
     .modal-open{
         display: inline-block;
@@ -193,14 +196,11 @@ main {
         border-top: 2px solid #06182E;
         border-radius: 8px;
         min-width: 200px;
-        // max-width: 500px;
+        height: 120px;
         a{
             text-decoration: none;
             font-size: 20px;
             color: black;        
-        &:hover {
-            background:rgb(183, 238, 187);
-        }
         }
     }
     .modal-open:after {
@@ -276,14 +276,28 @@ main {
         overflow: auto;
         background-color: rgb(0, 0, 0);
         background-color: rgb(0,0,0,0.9);
-        // background-color: rgba(120, 182, 216, 0.9);
         .modal-details {
-            background-color: #fefefe;
+            background-color: #ffffff;
             margin: 8%;
             padding: 20px;
             border: 1px solid black;
             width: auto;
             vertical-align: center;
+            article{
+                img{
+                    margin: 2%;
+                    width: 100%;
+                    max-width: 70%;
+                }
+                ul {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    margin-bottom: 5%;
+                    // padding: 2%;
+                    text-align: center;
+                    list-style-type: none;
+                }
+            }
         }
         .close {
             color: rgb(176, 176, 176);
@@ -320,11 +334,6 @@ main {
         height: 300px;
         width: auto;
     }
-    ul {
-        // margin-left: 40%;
-        text-align: center;
-        list-style-type: none;
-    }
     figcaption {
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 20px;
@@ -334,7 +343,7 @@ main {
 }
 footer {
     position: relative;
-    height: 100px;
+    margin-top: 2%;
     z-index: 1000;
     @include footer;
 }

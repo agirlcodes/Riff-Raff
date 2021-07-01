@@ -46,7 +46,7 @@ header h1 {
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #ffae00;
   padding: 1%;
-  z-index: 999;
+  z-index: 2;
 }
 
 main {
@@ -55,7 +55,7 @@ main {
   top: -9.15em;
   height: auto;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
 }
 main nav {
   display: flex;
@@ -162,7 +162,7 @@ main #timeline-title {
   text-align: center;
 }
 main #timeline-section {
-  height: 2px;
+  height: 5px;
   background: black;
   width: 100%;
   position: relative;
@@ -172,6 +172,9 @@ main .timeline {
   overflow-x: scroll;
   padding: 30px 0 10px 0;
   position: relative;
+}
+main .timeline :hover {
+  cursor: pointer;
 }
 main .modal-open {
   display: inline-block;
@@ -185,14 +188,12 @@ main .modal-open {
   border-top: 2px solid #06182E;
   border-radius: 8px;
   min-width: 200px;
+  height: 120px;
 }
 main .modal-open a {
   text-decoration: none;
   font-size: 20px;
   color: black;
-}
-main .modal-open a:hover {
-  background: #b7eebb;
 }
 main .modal-open:after {
   content: "";
@@ -268,12 +269,24 @@ main .modal {
   background-color: rgba(0, 0, 0, 0.9);
 }
 main .modal .modal-details {
-  background-color: #fefefe;
+  background-color: #ffffff;
   margin: 8%;
   padding: 20px;
   border: 1px solid black;
   width: auto;
   vertical-align: center;
+}
+main .modal .modal-details article img {
+  margin: 2%;
+  width: 100%;
+  max-width: 70%;
+}
+main .modal .modal-details article ul {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+  list-style-type: none;
 }
 main .modal .close {
   color: #b0b0b0;
@@ -307,10 +320,6 @@ main #img4, main #img5 {
   height: 300px;
   width: auto;
 }
-main ul {
-  text-align: center;
-  list-style-type: none;
-}
 main figcaption {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 20px;
@@ -320,7 +329,7 @@ main figcaption {
 
 footer {
   position: relative;
-  height: 100px;
+  margin-top: 2%;
   z-index: 1000;
   display: flex;
   align-items: center;
