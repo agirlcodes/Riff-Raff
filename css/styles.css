@@ -39,8 +39,8 @@ header {
   z-index: 999;
 }
 header h1 {
-  letter-spacing: 10px;
-  font-size: 50px;
+  letter-spacing: 5px;
+  font-size: 30px;
   margin-bottom: 5%;
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
@@ -50,6 +50,7 @@ header h1 {
 }
 
 main {
+  margin-top: 18%;
   background-color: #eec374;
   position: relative;
   top: -9.15em;
@@ -64,19 +65,19 @@ main nav {
   top: 0px;
   background-color: white;
   width: auto;
-  height: 60px;
+  height: 35px;
   justify-content: space-evenly;
 }
 main nav a {
   text-align: center;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   padding: 1%;
   font-family: "Montserrat Alternates", sans-serif;
   color: black;
 }
 main nav a:hover {
-  font-size: 30px;
+  font-size: 20px;
   color: orange;
 }
 main #narrative {
@@ -227,7 +228,7 @@ main .update {
 main #mc_embed_signup {
   text-align: center;
   clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
+  font: 16px Helvetica, Arial, sans-serif;
   width: 95%;
   margin: 0 auto;
 }
@@ -351,6 +352,12 @@ footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-i
   #background-picture {
     height: 810px;
     width: auto;
+  }
+
+  header h1 {
+    letter-spacing: 10px;
+    font-size: 50px;
+    margin-bottom: 95px;
   }
 
   main {

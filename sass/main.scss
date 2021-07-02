@@ -46,8 +46,8 @@ header{
     top: -3.2em;
     z-index: 999;
     h1{
-        letter-spacing: 10px;
-        font-size: 50px;
+        letter-spacing: 5px;
+        font-size: 30px;
         margin-bottom: 5%;
         color: rgb(255, 255, 255);
         font-family: 'Montserrat Alternates', sans-serif;
@@ -57,6 +57,7 @@ header{
     }
 }
 main {
+    margin-top: 18%;
     background-color: rgb(238, 195, 116);
     position: relative;
     top: -9.15em;
@@ -70,18 +71,19 @@ main {
         top: -0px;
         background-color: white;
         width: auto;
-        height: 60px;
+        height: 35px; //60px
         justify-content: space-evenly;
         a {
             text-align: center;
             text-decoration: none;
-            font-size: 25px;     
+            font-size: 18px; 
+            //25px    
             padding: 1%; 
             font-family: 'Montserrat Alternates', sans-serif; 
             color: black;
         }
         a:hover{
-            font-size: 30px;   
+            font-size: 20px; //30px   
             color: orange; 
         }
     }
@@ -236,7 +238,7 @@ main {
         text-align: center;
         // border: 1px solid black; 
         clear:left; 
-        font:14px Helvetica,Arial,sans-serif; 
+        font:16px Helvetica,Arial,sans-serif; 
         width: 95%;
         margin: 0 auto;
         #email {
@@ -356,6 +358,11 @@ footer {
     #background-picture {
         height: 810px;
         width: auto;
+    }
+    header h1 {
+        letter-spacing: 10px;
+        font-size: 50px;
+        margin-bottom: 95px;
     }
     main {
         width: 60%;
