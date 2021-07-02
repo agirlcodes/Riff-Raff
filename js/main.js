@@ -8,6 +8,13 @@ playButton.addEventListener('click', function (event) {
     event.preventDefault();
     demoGame.style.display = "block";
     commentSection.style.display = "block";
+    if (screen.width < 480) {
+        demoGame.style.display = "none";
+        commentSection.style.display = "none";
+        const p = document.createElement('p');
+        p.innerText = "This game is not supported in a mobile version";
+        document.querySelector('#game-container').appendChild(p);
+    } 
 })
 
 hideButton.addEventListener('click', function(event) {
