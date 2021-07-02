@@ -367,6 +367,7 @@ footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-i
   main {
     width: 60%;
     margin: 0 auto;
+    top: -9.15em;
   }
   main nav {
     display: flex;
