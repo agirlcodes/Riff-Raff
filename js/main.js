@@ -17,30 +17,38 @@ hideButton.addEventListener('click', function(event) {
 })
 
     // Display and hide modal.
-    let modalButtons = document.querySelectorAll('.modal-open');
+let modalButtons = document.querySelectorAll('.modal-open');
     // modal-open connected to buttons
     // attribute is for css
-    let closeSign = document.querySelectorAll('.close');
+let closeSign = document.querySelectorAll('.close');
     // getting the x
-    let modal = document.getElementsByClassName('modal');
+let modal = document.getElementsByClassName('modal');
     // getting all the elments through class
 
-        modalButtons.forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault();
-                let dataModal = button.getAttribute('data-modal');
-                document.getElementById(dataModal).style.display = "block";
-            })
-        })
+modalButtons.forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        let dataModal = button.getAttribute('data-modal');
+        document.getElementById(dataModal).style.display = "block";
+    })
+})
 
-        closeSign.forEach(function(sign) {
-            sign.onclick = function() {
-                let modal = sign.closest('.modal').style.display = "none";
-            }
-        })
+closeSign.forEach(function(sign) {
+    sign.onclick = function() {
+        let modal = sign.closest('.modal').style.display = "none";
+    }
+})
 
-        window.onclick = function(e) {
-            if(e.target.className == 'modal') {
-                e.target.style.display = "none";
-            }
-        }
+window.onclick = function(e) {
+    if(e.target.className == 'modal') {
+        e.target.style.display = "none";
+    }
+}
+
+let bubblesSection = document.querySelector('#background-wrap');
+
+if (screen.width < 480) {
+    // alert('Less than 480px')
+    console.log(`hello this is ${bubblesSection}`)
+    bubblesSection.style.display = "none";
+}
