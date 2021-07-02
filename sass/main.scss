@@ -30,12 +30,7 @@ body{
     background-size: cover;
 }
 #small-logo{
-    z-index: 999;
-    height: 100px;
-    width: auto;
-    margin: 2%;
-    margin-top: 1%;
-    margin-left: 1.5%;
+    visibility: hidden;
 
 }
 header{
@@ -71,7 +66,7 @@ main {
         top: -0px;
         background-color: white;
         width: auto;
-        height: 35px; //60px
+        height: 60px;
         justify-content: space-evenly;
         a {
             text-align: center;
@@ -351,13 +346,19 @@ footer {
 }
 
 @media screen and (min-width:581px) {
-    // #small-logo {
-    // position: sticky;
-    // }
-
+    
     #background-picture {
         height: 810px;
         width: auto;
+        #small-logo {
+        visibility: visible;
+        position: sticky;
+        height: 100px;
+        width: auto;
+        margin: 2%;
+        margin-top: 1%;
+        margin-left: 1.5%;
+        }
     }
     header h1 {
         letter-spacing: 10px;
@@ -367,6 +368,29 @@ footer {
     main {
         width: 60%;
         margin: 0 auto;
+        nav {
+            display: flex;
+            position: sticky;
+            z-index: 999;
+            top: -0px;
+            background-color: white;
+            width: auto;
+            height: 60px;
+            justify-content: space-evenly;
+            a {
+                text-align: center;
+                text-decoration: none;
+                font-size: 18px; 
+                //25px    
+                padding: 3%; 
+                font-family: 'Montserrat Alternates', sans-serif; 
+                color: black;
+            }
+            a:hover{
+                font-size: 20px; //30px   
+                color: orange; 
+            }
+        }
         iframe {
             height: 600px;
             width: auto;
