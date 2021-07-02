@@ -15,7 +15,7 @@ url('/fonts/Geoma-Light-demo.otf') format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-
+// mobile view
 body{
     background-color: rgb(169, 228, 241);
     margin: 0%;
@@ -348,6 +348,7 @@ footer {
     @include footer;
 }
 
+// desktop view
 @media screen and (min-width:581px) {
     
     #background-picture {
