@@ -14,8 +14,7 @@ body {
 
 #background-picture {
   background-image: url("/images/landingPage.svg");
-  width: 100%;
-  height: 50%;
+  width: auto;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +26,6 @@ body {
 }
 
 header {
-  visibility: hidden;
   position: relative;
   margin-left: 15%;
   text-align: center;
@@ -50,7 +48,7 @@ main {
   margin-top: 18%;
   background-color: #eec374;
   position: relative;
-  top: -15em;
+  top: -9.15em;
   height: auto;
   width: 100%;
   z-index: 2;
@@ -348,6 +346,7 @@ footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-i
 @media screen and (min-width: 581px) {
   #background-picture {
     height: 810px;
+    width: auto;
   }
   #background-picture #small-logo {
     visibility: visible;
@@ -363,7 +362,6 @@ footer .fa-twitter, footer .fa-envelope, footer .fa-instagram, footer .fa-itch-i
     letter-spacing: 10px;
     font-size: 50px;
     margin-bottom: 95px;
-    visibility: visible;
   }
 
   main {
