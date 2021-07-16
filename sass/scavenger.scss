@@ -1,27 +1,52 @@
+@font-face {
+    font-family: "Geoma-Light-demo";
+    src: url('/fonts/Geoma-Light-demo.woff') format('woff'),
+url('/fonts/Geoma-Light-demo.woff2') format('woff2'),
+url('/fonts/Geoma-Light-demo.svg#Geoma-Light-demo') format('svg'),
+url('/fonts/Geoma-Light-demo.eot'),
+url('/fonts/Geoma-Light-demo.eot?#iefix') format('embedded-opentype'),
+url('/fonts/Geoma-Light-demo.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
 body{
     margin: 0%;
+    font-family: "Geoma-Light-demo";
+    text-align: center;
+    background-color: #8FD1E3;
+    height: 500px;
     #background{
-        background-image: url('/images/newBubbles.png');
-        position: relative;
         background-position: center;
-        background-size: cover;
-        max-width: 100%;
-        height: 1000px;
-        z-index: -1;
+        object-fit: cover;
+        height: auto;
+        width: 955px;
     }
-    a{
-        img {
-            position: relative;
-            max-height: 400px;
-            min-width: 300px;
-            right: 30px;
-            top: -720px;
-            z-index: 1;
-        }
+    #statue {
+        position: relative;
+        height: 200px;
+        left: -610px;
+        top: -400px;
+        z-index: 1;
+    }
+    #statue:hover{
+        cursor: pointer;
     }
     article{
-            height: 100%;
-            width: 35%;
-            border: 1px solid black;
+        background-color: white;
+        padding:1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        position: relative;
+        top: -250px;
+        p{
+            font-family: 'Montserrat Alternates', sans-serif;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
     }
 }

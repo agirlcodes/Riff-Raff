@@ -6,6 +6,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 body {
   margin: 0%;
   font-family: "Geoma-Light-demo";
@@ -13,12 +14,15 @@ body {
   background-color: #8FD1E3;
   height: 500px;
 }
+
 body #background {
   background-position: center;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: auto;
   width: 955px;
 }
+
 body #statue {
   position: relative;
   height: 200px;
@@ -26,9 +30,11 @@ body #statue {
   top: -400px;
   z-index: 1;
 }
+
 body #statue:hover {
   cursor: pointer;
 }
+
 body article {
   background-color: white;
   padding: 1%;
@@ -37,10 +43,10 @@ body article {
   position: relative;
   top: -250px;
 }
+
 body article p {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   padding-left: 15%;
   padding-right: 15%;
 }
-
 /*# sourceMappingURL=scavenger.css.map */
