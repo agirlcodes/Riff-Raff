@@ -1,15 +1,27 @@
 body{
-    background-image: url('/images/newBubbles.png');
-    width: auto;
-    position: relative;
-    // background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+    margin: 0%;
+    #background{
+        background-image: url('/images/newBubbles.png');
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        height: 1000px;
+        z-index: -1;
+    }
+    a{
+        img {
+            position: relative;
+            max-height: 400px;
+            min-width: 300px;
+            right: 30px;
+            top: -720px;
+            z-index: 1;
+        }
+    }
     article{
-        height: 40%;
-        width: 35%;
-        border: 1px solid black;
+            height: 100%;
+            width: 35%;
+            border: 1px solid black;
     }
 }
