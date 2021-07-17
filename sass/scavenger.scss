@@ -26,27 +26,71 @@ body{
         height: auto;
         width: 955px;
     }
+    // #statue {
+    //     position: relative;
+    //     height: 200px;
+    //     left: -610px;
+    //     top: -400px;
+    //     z-index: 1;
+    // }
     #statue {
         position: relative;
-        height: 200px;
-        left: -610px;
-        top: -400px;
-        z-index: 1;
+        height: 150px;
+        top: -550px;
+        left: 220px
     }
     #statue:hover{
         cursor: pointer;
     }
     article{
         background-color: white;
-        padding:1%;
-        padding-left: 5%;
-        padding-right: 5%;
+        // padding:1%;
+        // padding-left: 5%;
+        // padding-right: 5%;
+        margin-left: 8%;
         position: relative;
-        top: -250px;
+        top: -200px;
+        width: 900px;
+        h1 {
+            font-size: 65px;
+        }
         p{
             font-family: 'Montserrat Alternates', sans-serif;
             padding-left: 15%;
             padding-right: 15%;
+            font-size: 55px;
+        }
+        a {
+            font-size: 45px;
         }
     }
+}
+
+// desktop view
+@media screen and (min-width: 581px) {
+    body {
+        width: 100%;
+    #statue {
+        position: relative;
+        height: 200px;
+        left: -600px;
+        top: -400px;
+        z-index: 1;
+    }
+    article {
+        width: 80%;
+        top: -30px;
+        margin-bottom: -15px;
+        padding: 1%;
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+        a {
+            font-size: 24px;
+        }
+    }
+}
 }

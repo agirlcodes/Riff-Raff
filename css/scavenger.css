@@ -21,26 +21,59 @@ body #background {
 }
 body #statue {
   position: relative;
-  height: 200px;
-  left: -610px;
-  top: -400px;
-  z-index: 1;
+  height: 150px;
+  top: -550px;
+  left: 220px;
 }
 body #statue:hover {
   cursor: pointer;
 }
 body article {
   background-color: white;
-  padding: 1%;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-left: 8%;
   position: relative;
-  top: -250px;
+  top: -200px;
+  width: 900px;
+}
+body article h1 {
+  font-size: 65px;
 }
 body article p {
   font-family: "Montserrat Alternates", sans-serif;
   padding-left: 15%;
   padding-right: 15%;
+  font-size: 55px;
+}
+body article a {
+  font-size: 45px;
+}
+
+@media screen and (min-width: 581px) {
+  body {
+    width: 100%;
+  }
+  body #statue {
+    position: relative;
+    height: 200px;
+    left: -600px;
+    top: -400px;
+    z-index: 1;
+  }
+  body article {
+    width: 80%;
+    top: -30px;
+    margin-bottom: -15px;
+    padding: 1%;
+  }
+  body article h1 {
+    font-size: 30px;
+  }
+  body article p {
+    font-size: 20px;
+  }
+  body article a {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=scavenger.css.map */
