@@ -42,10 +42,10 @@ body article p {
   font-family: "Montserrat Alternates", sans-serif;
   padding-left: 15%;
   padding-right: 15%;
-  font-size: 55px;
+  font-size: 35px;
 }
 body article a {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 @media screen and (min-width: 581px) {
