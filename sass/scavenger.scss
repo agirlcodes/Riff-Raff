@@ -15,7 +15,7 @@ url('/fonts/Geoma-Light-demo.otf') format('truetype');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
 body{
-    margin: 0%;
+    margin: 4%;
     font-family: "Geoma-Light-demo";
     text-align: center;
     background-color: #8FD1E3;
@@ -24,7 +24,8 @@ body{
         background-position: center;
         object-fit: cover;
         height: auto;
-        width: 955px;
+        width: 900px;
+//        width: 955px;
     }
     // #statue {
     //     position: relative;
@@ -36,8 +37,8 @@ body{
     #statue {
         position: relative;
         height: 150px;
-        top: -550px;
-        left: 220px
+        top: -520px;
+        left: 200px
     }
     #statue:hover{
         cursor: pointer;
@@ -47,7 +48,8 @@ body{
         // padding:1%;
         // padding-left: 5%;
         // padding-right: 5%;
-        margin-left: 8%;
+        // margin-left: 5%;
+        // margin-right: 5%;
         position: relative;
         top: -200px;
         width: 900px;
@@ -69,18 +71,23 @@ body{
 // desktop view
 @media screen and (min-width: 581px) {
     body {
-        width: 100%;
+        height: auto;
+        text-align: center;
+    #background {
+        width: 955px;
+    }
     #statue {
         position: relative;
         height: 200px;
         left: -600px;
         top: -400px;
+        // left: 100px;
+        // top: -600px;
         z-index: 1;
     }
     article {
-        width: 80%;
-        top: -30px;
-        margin-bottom: -15px;
+        width: 100%;
+        top: 1em;
         padding: 1%;
         h1 {
             font-size: 30px;
