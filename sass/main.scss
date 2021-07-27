@@ -14,6 +14,19 @@ url('/fonts/Geoma-Light-demo.otf') format('truetype');
     font-display: swap;
 }
 
+@font-face {
+    font-family: '212-Keyboard';
+    src:url('/fonts/212-Keyboard.woff') format('woff'),
+          url('212-Keyboard.woff2') format('woff2'),
+          url('212-Keyboard.eot'),
+          url('212-Keyboard.eot?#iefix') format('embedded-opentype'),
+          url('212-Keyboard.otf') format('truetype');
+  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 // mobile view
 body{
@@ -118,6 +131,15 @@ main {
         #demo-game {
             display: none;
             margin: 0 auto;
+        }
+        #instructions {
+            display: none;
+        }
+        .icons {
+            font-family: '212-Keyboard';
+            font-size: 55px;
+            background: none;
+            border: none;
         }
         #comment-section {
             display: none;

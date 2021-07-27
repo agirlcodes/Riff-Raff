@@ -3,11 +3,13 @@ let playButton = document.getElementById('play-game');
 let hideButton = document.getElementById('hide-game');
 const demoGame = document.querySelector('#demo-game');
 const commentSection = document.querySelector('#comment-section');
+const gameInstructions = document.querySelector('#instructions');
 
 playButton.addEventListener('click', function (event) {
     event.preventDefault();
     demoGame.style.display = "block";
     commentSection.style.display = "block";
+    gameInstructions.style.display = "block";
     if (screen.width < 480) {
         demoGame.style.display = "none";
         commentSection.style.display = "none";
@@ -21,6 +23,7 @@ hideButton.addEventListener('click', function(event) {
     event.preventDefault();
     demoGame.style.display = "none";
     commentSection.style.display = "none";
+    gameInstructions.style.display = "none";
 })
 
     // Display and hide modal.
