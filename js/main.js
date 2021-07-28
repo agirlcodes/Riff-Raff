@@ -12,6 +12,7 @@ playButton.addEventListener('click', function (event) {
     gameInstructions.style.display = "block";
     if (screen.width < 480) {
         demoGame.style.display = "none";
+        gameInstructions.style.display = "none";
         commentSection.style.display = "none";
         const p = document.createElement('p');
         p.innerText = "This game is not supported in a mobile version";
